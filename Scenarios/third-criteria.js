@@ -5,7 +5,7 @@ module.exports = {
             .waitForElementVisible("//a[@href='/stations']"); //wait for page to load
     },
 
-    'Enter invalid city name - Neverland': function (browser) {
+    'Enter invalid city name - Tokyo': function (browser) {
         browser
             .waitForElementVisible("//input[@id='q' and @placeholder='Your city name']")
             .setValue("//input[@id='q' and @placeholder='Your city name']", "tokyo")

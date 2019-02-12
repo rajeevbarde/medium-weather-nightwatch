@@ -6,8 +6,7 @@ Article link -  "insert here"
 ## Content
 - [Installation](#installation)
 - [Execute Test](#execute)
-- [Test in various environment](#environment)
-- [Cross Browser](#cross-browser)
+- [Result](#result)
 
 ## Pre-requisite
 
@@ -30,3 +29,6 @@ Article link -  "insert here"
 
 ## Execute Test
 - syntax : `node nightwatch.js Scenarios`
+
+## Test Result
+- HTML result are stored in 'Result' folder
