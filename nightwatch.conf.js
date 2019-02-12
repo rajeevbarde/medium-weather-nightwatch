@@ -61,7 +61,10 @@ const nwConfig =
         "desiredCapabilities" : {
           "browserName" : "chrome", 
           "acceptSslCerts": true,
-          "javascriptEnabled": true
+          "javascriptEnabled": true,
+          "chromeOptions" : {
+            "args" : ["headless"]
+         }
         },
 
         "screenshots" : {
