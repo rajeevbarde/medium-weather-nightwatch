@@ -9,7 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "ansi-regex": "^3.0.0",
-    "chromedriver": "^2.41.0",
+    "chromedriver": "^2.46.0",
     "filehound": "^1.16.4",
     "geckodriver": "^1.12.2",
     "iedriver": "^3.9.2",
