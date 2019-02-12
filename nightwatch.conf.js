@@ -62,9 +62,6 @@ const nwConfig =
           "browserName" : "chrome", 
           "acceptSslCerts": true,
           "javascriptEnabled": true,
-          "chromeOptions" : {
-            "args" : ["headless"]
-         }
         },
 
         "screenshots" : {
