@@ -1,0 +1,23 @@
+{
+  "name": "WeatherSite-Test",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Rajeev Barde",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-regex": "^3.0.0",
+    "chromedriver": "^2.41.0",
+    "filehound": "^1.16.4",
+    "geckodriver": "^1.12.2",
+    "iedriver": "^3.9.2",
+    "nightwatch": "^1.0.11",
+    "nodemailer": "^4.6.8",
+    "path": "^0.12.7",
+    "selenium-server": "^3.14.0",
+    "xmldoc": "^1.1.2",
+    "yargs": "^12.0.5"
+  }
+}
