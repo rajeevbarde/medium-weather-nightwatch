@@ -17,3 +17,9 @@ jobs:
       - run:
           name: Run integration test
           command: node nightwatch.js Scenarios
+          
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
