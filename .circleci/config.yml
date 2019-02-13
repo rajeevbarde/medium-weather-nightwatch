@@ -20,7 +20,7 @@ jobs:
 
       - run:
           name: Installing nightwatch & Web drivers
-          command: ls && npm install && mkdir -p Result
+          command: npm install && mkdir -p Result
   
       - run:
           name: Run integration test
