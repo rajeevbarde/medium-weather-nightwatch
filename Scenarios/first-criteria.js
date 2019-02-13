@@ -127,7 +127,7 @@ module.exports = {
 
     },
 
-    'Verify middle weather section': +function (browser) {
+    'Verify middle weather section': function (browser) {
         browser.expect.element("(//li[@class='widget-tabs__item'])[2]").text.to.contain('Daily');
         browser.expect.element("(//li[@class='widget-tabs__item'])[3]").text.to.contain('Hourly');
         browser.expect.element("(//li[@class='widget-tabs__item'])[4]").text.to.contain('Chart');
