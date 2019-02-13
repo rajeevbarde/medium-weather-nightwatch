@@ -9,7 +9,10 @@ module.exports = {
     },
 
     'Verify valid city name - Tokyo': function (browser) {
+
+        let forecast_selector = "//div[@id='forecast-list']";
+
         home.setCity("tokyo")
-        browser.expect.element("//div[@id='forecast-list']").text.to.contain('Tokyo, JP');
+        browser.expect.element(forecast_selector).text.to.contain('Tokyo, JP');
     },
 };

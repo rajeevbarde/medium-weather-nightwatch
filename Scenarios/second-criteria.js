@@ -8,9 +8,11 @@ module.exports = {
     },
 
     'Verify invalid city name - Neverland': function (browser) {
+
+        let alert_selector = "//div[@role='alert']";
         
         home.setCity("Neverland")
-        browser.expect.element("//div[@role='alert']").text.to.contain('Not found');
+        browser.expect.element(alert_selector).text.to.contain('Not found');
     },
 
 
