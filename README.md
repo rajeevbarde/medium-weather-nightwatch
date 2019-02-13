@@ -30,3 +30,4 @@ Below command will execute acceptance criteria under folder Scenarios
 
 ## CI-CD
 -  CircleCI - https://circleci.com/gh/rajeevbarde/medium-weather-nightwatch
+- HMTL Reports are under menu - Artifacts
