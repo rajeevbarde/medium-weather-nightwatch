@@ -27,7 +27,7 @@ jobs:
           command: node nightwatch.js Scenarios
 
       - store_artifacts:
-        path: nw-ci-medium/Result
+          path: nw-ci-medium/Result
       - store_test_results:
           path: nw-ci-medium/Result
 
