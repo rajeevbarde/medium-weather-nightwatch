@@ -20,16 +20,16 @@ jobs:
 
       - run:
           name: Installing nightwatch & Web drivers
-          command: npm install && mkdir -p Result
+          command: ls && npm install && mkdir -p Result
   
       - run:
           name: Run integration test
           command: node nightwatch.js Scenarios
 
       - store_artifacts:
-          path: nw-ci-medium/Result
+          path: Result
       - store_test_results:
-          path: nw-ci-medium/Result
+          path: Result
 
 workflows:
   version: 2
