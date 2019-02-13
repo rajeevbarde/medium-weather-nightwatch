@@ -1,19 +1,15 @@
+const HomePage = require("../Scenarios/PageLibrary/Home");
+
+let home;
+
 module.exports = {
     'Go to openweathermap.org': function (browser) {
-        browser
-            .url('https://openweathermap.org/')
-            .waitForElementVisible("//a[@href='/stations']"); //wait for page to load
+        home = new HomePage(browser);
+        home.visitHomePage();
     },
 
-    'Enter invalid city name - Tokyo': function (browser) {
-        browser
-            .waitForElementVisible("//input[@id='q' and @placeholder='Your city name']")
-            .setValue("//input[@id='q' and @placeholder='Your city name']", "tokyo")
-            .click("//form[@id='searchform']//button[@type='submit']")
-
+    'Verify valid city name - Tokyo': function (browser) {
+        home.setCity("tokyo")
         browser.expect.element("//div[@id='forecast-list']").text.to.contain('Tokyo, JP');
     },
-
-
-
 };

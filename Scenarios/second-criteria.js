@@ -1,16 +1,15 @@
+const HomePage = require("../Scenarios/PageLibrary/Home");
+
+let home;
 module.exports = {
     'Go to openweathermap.org': function (browser) {
-        browser
-            .url('https://openweathermap.org/')
-            .waitForElementVisible("//a[@href='/stations']"); //wait for page to load
+        home = new HomePage(browser);
+        home.visitHomePage();
     },
 
-    'Enter invalid city name - Neverland': function (browser) {
-        browser
-            .waitForElementVisible("//input[@id='q' and @placeholder='Your city name']")
-            .setValue("//input[@id='q' and @placeholder='Your city name']", "Neverland")
-            .click("//form[@id='searchform']//button[@type='submit']")
-
+    'Verify invalid city name - Neverland': function (browser) {
+        
+        home.setCity("Neverland")
         browser.expect.element("//div[@role='alert']").text.to.contain('Not found');
     },
 

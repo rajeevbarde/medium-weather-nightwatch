@@ -1,9 +1,11 @@
+const HomePage = require("../Scenarios/PageLibrary/Home");
+
 module.exports = {
     'Verify Element on top black band - metric(°C)/imperial(°F), Sign in/up': function (browser) {
-        browser
-            .url('https://openweathermap.org/')
-            .waitForElementVisible("//a[@href='/stations']"); //wait for page to load
-        // .expect.element("//a[@class='first-child']").to.have.attribute('href').which.contains('//openweathermap.desk.com/')
+
+        let home = new HomePage(browser);
+        home.visitHomePage();
+
         browser.expect.element("//span[@id='metric']").text.to.contain('°C')
         browser.expect.element("//span[@id='imperial']").text.to.contain('°F')
 
